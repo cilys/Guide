@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/comTitle.css" />
+	</head>
+	<body>
+		<div class="comTitle">
+			<span>当Ftp遇上了RxJava</span>
+		</div>
+		
+		<div class="roundDiv">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;前段时间，由于项目需求，需要使用到ftp进行文件上传下载，没办法，只好自行研究。还好，ftp已经有支持的jar包了，剩下就是如何在项目里使用了，由于项目里使用了Rxjava，所以尝试使用ftp结合RxJava来实现需求。</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;个人认为：RxJava的最强大之处是线程调度，很简单的就可以实现工作在子线程，而结果却在主线程里。所以，既然项目里已经有了RxJava了，我就不需要在利用Handler + Thread来做耗时操作了。把ftp利用RxJava进行二次封装，顺利完成文件上传下载、结果通知主线程等操作。</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;当然，实现方法可以很多，我的代码，只是其中的一种。具体代码可以参考如下：</p>
+		</div>
+	</body>
+</html>
